@@ -1,0 +1,28 @@
+/* Start Landing Page */
+
+.landing-page {
+    color: #fff;
+    background: #000;
+    background-size: contain;
+    height: 100vh;
+    position: relative;
+}
+.introduction-text {
+    width: 100%;
+    text-align: center;
+    line-height: 1.7;
+    position: absolute;
+    top: 270px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.introduction-text h1 {
+    margin-bottom: 40px;
+}
+
+.introduction-text span {
+    color: var(--main-color)
+}
+
+/* End Landing Page */

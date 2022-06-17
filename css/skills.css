@@ -1,0 +1,59 @@
+/* Start Skills */
+
+.skills {
+    text-align: center;
+    background: #DDD;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.skills .container {
+    height: inherit
+}
+
+
+.skills .skill-box {
+    display: flex;
+    justify-content: space-around;
+    background: #fff;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.skills .skill-box .skill-name {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.skills .skill-box .skill-progress {
+    width: 80%;
+    background: #f5f5f5;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.skills .skill-box .skill-progress span {
+    background: var(--main-color);
+    height: 100%;
+    width: 0%;
+    float: left;
+    transition: all 4s ease;
+}
+
+@media (max-width: 767px) {
+    .skills {
+        height: 150vh;
+        height: auto;
+    }
+    .skills .skill-box {
+        display: block;
+    }
+    .skills .skill-box .skill-name {
+        margin-bottom: 20px;
+    }
+    .skills .skill-box .skill-progress {
+        height: 20px;
+        width: 100%;
+    }
+}

@@ -1,0 +1,81 @@
+/* Start Settings */
+
+.settings-box {
+    color: black;
+    background: #fff;
+    width: 300px;
+    height: 100vh;
+    padding: 20px;
+    border: 1px solid #EEE;
+    position: fixed;
+    left: -300px;
+    /* left: 0; */
+    transition: 0.2s;
+    z-index: 1000;
+}
+
+.settings-box.open {
+    left: 0;
+}
+
+.settings-box button {
+    color: #FFF;
+    background: var(--main-color);
+    width: 140px;
+    border: 1px solid #EEE;
+    position: absolute;
+    right: -140px;
+    top: 120px;
+    padding: 5px;
+}
+
+.option-box {
+    background: #EEE;
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 6px;
+}
+
+.option-box h2 {
+    padding: 0 0 20px;
+    font-size: 17px;
+}
+
+.colors-list li {
+    border-radius: 50%;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.colors-list li.active {
+    border: 3px solid#fff;
+}
+
+.option-box span {
+    background: var(--main-color);
+    color: #ffff;
+    padding: 3px 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.option-box span.active {
+    opacity: 1;
+}
+
+.settings-box .reset-options {
+    color: #FFF;
+    background: #f44336;
+    text-align: center;
+    padding: 18px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* End Settings */

@@ -1,0 +1,32 @@
+/* Start About */
+
+.about {
+    display: flex;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.about .text-box {
+    flex: 1;
+    text-align: center;
+}
+
+.about .text-box p {
+    font-size: 18px;
+    color: #707070;
+    line-height: 1.6;
+}
+
+.about .img-box {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width: 747px) {
+    .about {
+        display: block;
+    }
+    .about .img-box {
+            margin-top: 20px;
+        }
+}

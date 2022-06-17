@@ -1,0 +1,78 @@
+/* Start Contact Us */
+
+.contact {
+    text-align: center;
+    padding-top: 80px;
+}
+
+.contact-container {
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.contact .overlay {
+    background: url("../imgs/img1.jpg");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0.19;
+}
+
+.contact form,
+.contact h2 {
+    position: relative;
+    z-index: 2;
+}
+
+.contact form {
+    overflow: hidden;
+}
+
+.contact form .left {
+    float: left;
+    width: 49%;
+}
+
+.contact form .right {
+    float: right;
+    width: 49%;
+}
+
+.contact form input:not([type="submit"]),
+.contact form textarea {
+    background-color: rgb(255, 255, 255, 0.7);
+    width: 80%;
+    height: 40px;
+    padding: 5px 10px;
+    border: 1px solid #DDD;
+    margin-bottom: 10px;
+}
+
+.contact form input {}
+
+.contact form textarea {
+    height: 130px;
+}
+
+.contact form input[type="submit"] {
+    color: #FFF;
+    background: var(--main-color);
+    border: none;
+    width: 80%;
+    height: 40px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.contact form input:not([type="submit"]):focus,
+.contact form textarea:focus {
+    outline: 2px solid var(--main-color)
+}
+
+@media (max-width: 767px) {
+    .contact form .left,
+    .contact form .right {
+        width: 100%;
+    }
+}

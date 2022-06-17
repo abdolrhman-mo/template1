@@ -1,0 +1,38 @@
+:root {
+    --main-color: #ff9800;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 90%;
+}
+
+.container h2 {
+    color: var(--main-color);
+    font-size: 35px;
+    padding: 50px;
+}
+
+/* Start Footer */
+
+footer {
+    color: #DDD;
+    background-color: #333;
+    text-align: center;
+    padding: 20px
+}
+
+/* End Footer */

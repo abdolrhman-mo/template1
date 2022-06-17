@@ -1,0 +1,141 @@
+/* Start Timeline */
+
+.timeline {
+    background: #DDD;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.timeline-content {
+    position: relative;
+    overflow: hidden;
+}
+
+.timeline-content .year {
+    color: white;
+    background: var(--main-color);
+    width: 60px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.timeline-content .right,
+.timeline-content .left {
+    width: calc(50% - 45px);
+    margin-bottom: 40px;
+}
+
+.timeline-content .left {
+    float: left;
+}
+
+.timeline-content .right {
+    float: right;
+}
+
+.timeline-content .content h3 {
+    color: var(--main-color);
+    padding: 0 0 20px;
+}
+
+.timeline-content .content {
+    padding: 35px 20px 20px;
+    border-radius: 4px;
+    background: #FFF;
+}
+
+.timeline-content .content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+
+
+.clearfix {
+    clear: both;
+}
+
+/* ----------------- Drawings -------------------- */
+
+/* straight line */
+.timeline-content:before {
+    content: '';
+    background-color: var(--main-color);
+    width: 2px;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -1px;
+    top: 0;
+}
+
+.timeline-content .year {
+    margin-bottom: 10px;
+}
+
+/* timeline circles */
+.timeline-content .right:before,
+.timeline-content .left:before {
+    content: '';
+    background-color: #FFF;
+    height: 20px;
+    width: 20px;
+    margin-top: 34px;
+    border: 4px solid var(--main-color);
+    border-radius: 50%;
+    position: absolute;
+    right: calc(50% - 14px);
+}
+
+/* timeline arrow */
+.timeline-content .left .content:before,
+.timeline-content .right .content:before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px;
+    position: absolute;
+}
+
+.timeline-content .left .content:before {
+    border-color: transparent transparent transparent #FFF;
+    right: calc(50% + 15px);
+}
+
+.timeline-content .right .content:before {
+    border-color: transparent #FFF transparent transparent;
+    right: calc(50% - 45px);
+}
+
+@media (max-width: 767px) {
+    .timeline-content .right,
+    .timeline-content .left {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+
+    /* straight line */
+    .timeline-content:before {
+        display: none;
+    }
+
+    /* timeline circles */
+    .timeline-content .right:before,
+    .timeline-content .left:before {
+        display: none;
+    }
+
+    /* timeline arrow */
+    .timeline-content .left .content:before,
+    .timeline-content .right .content:before {
+        display: none;
+    }
+}
