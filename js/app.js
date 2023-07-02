@@ -17,7 +17,7 @@ if (colorId !== null) {
 }
 
 const landingPage = document.querySelector(".landing-page");
-const imgsNum = 10;
+const imgsNum = 1;
 const settingsBox = document.querySelector(".settings-box");
 const settingsBtn = document.querySelector(".settings-box button");
 

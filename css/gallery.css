@@ -10,10 +10,8 @@
 .gallery .imgs-box {}
 
 .gallery .imgs-box img {
-    width: 100px;
-    padding: 3px;
-    background-color: #F6F6F6;
-    border: 1px solid #CCC;
+    width: 250px;
+    border-radius: 4px;
     margin: 5px;
     cursor: pointer;
 }
@@ -38,6 +36,7 @@
     height: 70%;
     z-index: 1001;
     text-align: center;
+    border-radius: 4px;
 }
 
 .popup-box h2 {
@@ -48,6 +47,7 @@
 
 .popup-box img {
     height: 80%;
+    border-radius: 4px;
 }
 
 .popup-box .popup-x {

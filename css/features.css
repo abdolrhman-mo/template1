@@ -6,6 +6,10 @@
     padding-bottom: 80px;
 }
 
+.features h2 {
+    padding-bottom: 100px;
+}
+
 .features .feature-box {
     float: left;
     width: calc(100% / 3);
@@ -27,12 +31,13 @@
 }
 
 .features .feature-box .img-container img {
-    width: 70%;
+    width: 100%;
+    height: 100%;
     position: absolute;
     bottom: 0;
     left: 50%;
     top: 50%;
-    margin: -35%
+    margin: -50%;
 }
 
 .features .feature-box h4 {
