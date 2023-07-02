@@ -23,56 +23,56 @@ const settingsBtn = document.querySelector(".settings-box button");
 
 // ------------------------------------  Random Backgrounds  ------------------------------------------
 
-let bgImgBolean = true;
+// let bgImgBolean = true;
 
-let bgInterval;
+// let bgInterval;
 
-let changeBg = () => {
-  if (bgImgBolean === true) {
-    bgInterval = setInterval(() => {
-      document.querySelector(
-        ".landing-page"
-      ).style.background = `url('imgs/img${
-        Math.floor(Math.random() * imgsNum) + 1
-      }.jpg') #000`;
-    }, 1000);
-  }
-};
+// let changeBg = () => {
+//   if (bgImgBolean === true) {
+//     bgInterval = setInterval(() => {
+//       document.querySelector(
+//         ".landing-page"
+//       ).style.background = `url('imgs/img${
+//         Math.floor(Math.random() * imgsNum) + 1
+//       }.jpg') #000`;
+//     }, 1000);
+//   }
+// };
 
-changeBg();
+// changeBg();
 
-let randomBg = localStorage.getItem("random-background");
+// let randomBg = localStorage.getItem("random-background");
 
-if (randomBg !== null) {
-  // set option to yes or no
-  if (randomBg === "false") {
-    bgImgBolean = false;
-    clearInterval(bgInterval);
-  } else {
-    bgImgBolean = true;
-    changeBg();
-  }
+// if (randomBg !== null) {
+//   // set option to yes or no
+//   if (randomBg === "false") {
+//     bgImgBolean = false;
+//     clearInterval(bgInterval);
+//   } else {
+//     bgImgBolean = true;
+//     changeBg();
+//   }
 
-  // Active
+//   // Active
 
-  // remove active from all spans
-  document
-    .querySelectorAll(".random-backgrounds span.active")
-    .forEach((element) => {
-      element.classList.remove("active");
-    });
+//   // remove active from all spans
+//   document
+//     .querySelectorAll(".random-backgrounds span.active")
+//     .forEach((element) => {
+//       element.classList.remove("active");
+//     });
 
-  // add active to selected span
-  if (randomBg === "false") {
-    document
-      .querySelector(".random-backgrounds span.no")
-      .classList.add("active");
-  } else {
-    document
-      .querySelector(".random-backgrounds span.yes")
-      .classList.add("active");
-  }
-}
+//   // add active to selected span
+//   if (randomBg === "false") {
+//     document
+//       .querySelector(".random-backgrounds span.no")
+//       .classList.add("active");
+//   } else {
+//     document
+//       .querySelector(".random-backgrounds span.yes")
+//       .classList.add("active");
+//   }
+// }
 
 // ################################################## SETTINGS ##################################################
 
@@ -101,23 +101,23 @@ document.querySelectorAll(".colors-list li").forEach((li) => {
 
 // ------------------------------------  RANDOM BG OPTION  ------------------------------------------
 
-document.querySelectorAll(".random-backgrounds span").forEach((span) => {
-  span.addEventListener("click", (e) => {
-    // set option to yes or no
-    if (e.target.dataset.bolean === "no") {
-      bgImgBolean = false;
-      clearInterval(bgInterval);
+// document.querySelectorAll(".random-backgrounds span").forEach((span) => {
+//   span.addEventListener("click", (e) => {
+//     // set option to yes or no
+//     if (e.target.dataset.bolean === "no") {
+//       bgImgBolean = false;
+//       clearInterval(bgInterval);
 
-      localStorage.setItem("random-background", false);
-    } else {
-      bgImgBolean = true;
-      changeBg();
+//       localStorage.setItem("random-background", false);
+//     } else {
+//       bgImgBolean = true;
+//       changeBg();
 
-      localStorage.setItem("random-background", true);
-    }
-    handleActive(e);
-  });
-});
+//       localStorage.setItem("random-background", true);
+//     }
+//     handleActive(e);
+//   });
+// });
 
 // ------------------------------------  SHOW NAV BULLETS OPTION  ------------------------------------------
 
